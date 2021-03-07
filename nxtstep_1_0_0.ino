@@ -29,7 +29,7 @@ UniversalTelegramBot bot(BotToken, net_ssl);
 int botRequestDelay = 100;
 unsigned long lastTimeBotRan;
 
-int lockScreenDelay = 5000;
+int lockScreenDelay = 10000;
 unsigned long lastTimeLockScreenShown;
 
 // Sync datetime with NTP server
@@ -58,7 +58,6 @@ void loop()
       Serial.println("got response");
       handleNewMessages(numNewMessages);
       numNewMessages = bot.getUpdates(bot.last_message_received + 1);
-      delay(10000);
     }
     lastTimeBotRan = millis();
   }
@@ -76,7 +75,7 @@ void lockScreen()
   Serial.println(&timeinfo, "%H:%M\n%A\n%B %d %Y");
 
   char timeStringBuff[50]; //50 chars should be enough
-  strftime(timeStringBuff, sizeof(timeStringBuff), "%H:%M\n%A\n%B %d %Y", &timeinfo);
+  strftime(timeStringBuff, sizeof(timeStringBuff), "%H:%M %A %B %d %Y", &timeinfo);
   //print like "const char*"
   Serial.println(timeStringBuff);
 
