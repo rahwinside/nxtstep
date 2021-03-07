@@ -1,0 +1,58 @@
+{
+    "configurations": [
+        {
+            "name": "DOS",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Users\\rah\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.4\\**",
+                "C:\\Program Files (x86)\\Arduino\\libraries\\**",
+                "C:\\Users\\rah\\Documents\\Arduino\\libraries\\**",
+                "C:\\Users\\rah\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64"
+        },
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Users/rah/Library/Arduino15/packages/esp32/tools/**",
+                "/Users/rah/Documents/Arduino/libraries/**",
+                "/Applications/Arduino.app/Contents/Java/libraries/**",
+                "/Users/rah/Library/Arduino15/packages/esp32/hardware/esp32/1.0.4/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [],
+            "compilerPath": "/usr/local/bin/avr-gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "gcc-x64",
+            "forcedInclude": []
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/rah/.arduino15/packages/esp32/tools/**",
+                "/home/rah/Arduino/libraries/**",
+                "/home/rah/Downloads/arduino-1.8.13/libraries/**",
+                "/home/rah/.arduino15/packages/esp32/hardware/esp32/1.0.4/**",
+                "/home/rah/Downloads/arduino-1.8.13/arduino/libraries/**"
+            ],
+            "forcedInclude": [],
+            "defines": [
+                "USBCON"
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}
